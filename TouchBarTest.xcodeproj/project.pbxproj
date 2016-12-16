@@ -14,6 +14,10 @@
 		30C391F11E0407930089429B /* NSTouchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391F01E0407930089429B /* NSTouchBarExtensions.swift */; };
 		30C391F31E0408540089429B /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391F21E0408540089429B /* WindowController.swift */; };
 		30C391F51E0420130089429B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391F41E0420130089429B /* GameScene.swift */; };
+		8F4060C31E04791E0090D6D2 /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8F4060C21E04791E0090D6D2 /* bird.atlas */; };
+		8FB2DE161E0489B3008B9D94 /* pikachu.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8FB2DE151E0489B3008B9D94 /* pikachu.atlas */; };
+		8FB2DE191E048C4D008B9D94 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB2DE171E048C4D008B9D94 /* background.png */; };
+		8FB2DE1A1E048C4D008B9D94 /* obstacle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB2DE181E048C4D008B9D94 /* obstacle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		30C391F01E0407930089429B /* NSTouchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTouchBarExtensions.swift; sourceTree = "<group>"; };
 		30C391F21E0408540089429B /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		30C391F41E0420130089429B /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8F4060C21E04791E0090D6D2 /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
+		8FB2DE151E0489B3008B9D94 /* pikachu.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pikachu.atlas; sourceTree = "<group>"; };
+		8FB2DE171E048C4D008B9D94 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		8FB2DE181E048C4D008B9D94 /* obstacle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obstacle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				30C391EA1E03F1170089429B /* Info.plist */,
 				30C391F01E0407930089429B /* NSTouchBarExtensions.swift */,
 				30C391F41E0420130089429B /* GameScene.swift */,
+				8FB2DE171E048C4D008B9D94 /* background.png */,
+				8FB2DE181E048C4D008B9D94 /* obstacle.png */,
+				8FB2DE151E0489B3008B9D94 /* pikachu.atlas */,
+				8F4060C21E04791E0090D6D2 /* bird.atlas */,
 			);
 			path = TouchBarTest;
 			sourceTree = "<group>";
@@ -130,7 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB2DE1A1E048C4D008B9D94 /* obstacle.png in Resources */,
+				8F4060C31E04791E0090D6D2 /* bird.atlas in Resources */,
+				8FB2DE191E048C4D008B9D94 /* background.png in Resources */,
 				30C391E61E03F1170089429B /* Assets.xcassets in Resources */,
+				8FB2DE161E0489B3008B9D94 /* pikachu.atlas in Resources */,
 				30C391E91E03F1170089429B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +317,7 @@
 				30C391EF1E03F1170089429B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

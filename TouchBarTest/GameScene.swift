@@ -65,6 +65,9 @@ extension GameScene {
         
         // Collision delegate
         self.physicsWorld.contactDelegate = self
+        
+        // Add observer
+        NotificationCenter.default.addObserver(self, selector: #selector(GameScene.jump), name: jumpNotification, object: nil)
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -124,9 +127,9 @@ extension GameScene {
     }
     
     func createPlayer() -> SKSpriteNode {
-        let frames = SKTextureAtlas(named: "PlayerMovement").textureNames.map { SKTexture(imageNamed: $0) }
+        let frames = SKTextureAtlas(named: "pikachu").textureNames.map { SKTexture(imageNamed: $0) }
         let playerNode = SKSpriteNode(texture: frames.first)
-        playerNode.size = CGSize(width: 15, height: 15)
+        playerNode.size = CGSize(width: 30, height: 30)
         playerNode.position = .zero
         playerNode.zPosition = 1
         
