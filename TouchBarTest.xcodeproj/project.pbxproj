@@ -11,6 +11,9 @@
 		30C391E41E03F1170089429B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391E31E03F1170089429B /* ViewController.swift */; };
 		30C391E61E03F1170089429B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C391E51E03F1170089429B /* Assets.xcassets */; };
 		30C391E91E03F1170089429B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C391E71E03F1170089429B /* Main.storyboard */; };
+		30C391F11E0407930089429B /* NSTouchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391F01E0407930089429B /* NSTouchBarExtensions.swift */; };
+		30C391F31E0408540089429B /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391F21E0408540089429B /* WindowController.swift */; };
+		30C391F51E0420130089429B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C391F41E0420130089429B /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		30C391E51E03F1170089429B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C391E81E03F1170089429B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30C391EA1E03F1170089429B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C391F01E0407930089429B /* NSTouchBarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTouchBarExtensions.swift; sourceTree = "<group>"; };
+		30C391F21E0408540089429B /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		30C391F41E0420130089429B /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 			children = (
 				30C391E11E03F1170089429B /* AppDelegate.swift */,
 				30C391E31E03F1170089429B /* ViewController.swift */,
+				30C391F21E0408540089429B /* WindowController.swift */,
 				30C391E51E03F1170089429B /* Assets.xcassets */,
 				30C391E71E03F1170089429B /* Main.storyboard */,
 				30C391EA1E03F1170089429B /* Info.plist */,
+				30C391F01E0407930089429B /* NSTouchBarExtensions.swift */,
+				30C391F41E0420130089429B /* GameScene.swift */,
 			);
 			path = TouchBarTest;
 			sourceTree = "<group>";
@@ -133,6 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C391F51E0420130089429B /* GameScene.swift in Sources */,
+				30C391F11E0407930089429B /* NSTouchBarExtensions.swift in Sources */,
+				30C391F31E0408540089429B /* WindowController.swift in Sources */,
 				30C391E41E03F1170089429B /* ViewController.swift in Sources */,
 				30C391E21E03F1170089429B /* AppDelegate.swift in Sources */,
 			);
