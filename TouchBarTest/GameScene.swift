@@ -13,6 +13,8 @@ import GameplayKit
 class GameScene: SKScene {
     let playerVelocity: CGFloat = 500
     
+    var score: Int = 0
+    
     enum PhysicsCategory: UInt32 {
         case player = 0
         case ground = 1
@@ -42,7 +44,7 @@ extension GameScene {
         self.backgroundColor = .white
         
         // Some debug info
-        let debug = true
+        let debug = false
         view.showsPhysics = debug
         view.showsFPS = debug
         view.showsNodeCount = debug
@@ -104,6 +106,7 @@ extension GameScene {
 extension GameScene {
     func jump() {
         self.player.physicsBody?.applyImpulse(CGVector(dx: 0, dy: -15))
+        NotificationCenter.default.post(name: scoreNotification, object: nil)
         
         if self.isPaused {
             self.isPaused = false
@@ -192,6 +195,10 @@ extension GameScene {
             self.obstacles.first?.removeFromParent()
             self.obstacles.removeFirst()
         }
+    }
+    
+    func play() {
+        print("Play")
     }
 }
 

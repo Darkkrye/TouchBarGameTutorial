@@ -15,4 +15,7 @@ extension NSTouchBarCustomizationIdentifier {
 
 extension NSTouchBarItemIdentifier {
     static let customView = NSTouchBarItemIdentifier("com.openfield.TouchBarTest.items.customView")
+    static let playButton = NSTouchBarItemIdentifier("com.openfield.TouchBarTest.itmes.playButton")
+    static let label = NSTouchBarItemIdentifier("com.openfield.TouchBarTest.itmes.label")
+    static let scoreLabel = NSTouchBarItemIdentifier("com.openfield.TouchBarTest.itmes.scoreLabel")
 }
